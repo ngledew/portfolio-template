@@ -1,0 +1,201 @@
+
+/* Universal */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
+
+
+/* Landing section */
+
+.landing {
+  position: relative;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0 0 10% 0;
+}
+
+.landing-text {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 40%;
+  top: 35%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2vw;
+  width: 40%;
+}
+
+/* Portfolio gallery */
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  max-width: 100%;
+}
+
+.column1 img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 49%;
+  text-align: center;
+}
+
+.column2 img {
+  max-width: 24.3%;
+}
+
+.column3 img {
+  max-width: 32.5%;
+}
+
+.item{
+  padding: 2px;
+}
+
+/* Content overlay */
+
+.item:hover {
+  opacity: 0.9;
+}
+
+/* Contact */
+
+.contact {
+  text-align: center;
+  color: white;
+}
+
+.contact-text {
+  padding: 15px;
+}
+
+hr {
+  width: 30px;
+  text-align: center;
+}
+
+/* Footer content */
+
+ul {
+  padding: 0 0;
+}
+
+li {
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 20px;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+li:hover {
+  color: #292929;
+  border: 1px solid #0099ff;
+  transition: .5s;
+}
+
+footer {
+
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+}
+
+.copyright{
+  padding-top: 15px;
+}
+
+/* Media queries */
+
+@media (max-width: 855px) {
+  .column1 img {
+    min-width: 80%;
+  }
+
+  .column2 img{
+    min-width: 40%;
+  }
+
+  .long1,
+  .long2 {
+    min-width: 40%;
+  }
+
+  .long3 {
+    min-width: 80%;
+  }
+
+  li {
+    list-style: none;
+    margin: 10px 10px;
+  }
+
+  h1, h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+
+}
+
+@media (max-width: 650px) {
+
+  .landing {
+    margin-bottom: 30%;
+  }
+
+  .personalphoto {
+    margin-top: 30%;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 470px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .landing-text {
+    left: -30px;
+    top: 0;
+  }
+}
